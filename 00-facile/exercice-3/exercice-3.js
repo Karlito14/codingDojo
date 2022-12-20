@@ -1,15 +1,14 @@
 function exercice3(n) {
-  let nombre = 0;
+  let nombreEtapes = 0;
   while(n !== 1){
-    if(n % 2 === 0){
+    if(nombreEstPair(n)){
       n = n/2;
-      nombre++;
     } else {
        n = n*3 + 1
-      nombre++;
     }
+    nombreEtapes++;
   }
-  return nombre;
+  return nombreEtapes;
 }
 
 function nombreEstPair(nombre) {
